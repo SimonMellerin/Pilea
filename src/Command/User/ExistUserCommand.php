@@ -36,7 +36,7 @@ class ExistUserCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('pilea:user:exist')
+            ->setName('aeneria:user:exist')
             ->setDescription('Edit an user.')
             ->addArgument('username', InputArgument::REQUIRED, 'Username')
         ;

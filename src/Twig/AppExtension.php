@@ -28,10 +28,10 @@ final class AppExtension extends AbstractExtension
     public function getFunctions()
     {
         return [
-            new TwigFunction('pilea_version', [$this, 'getVersion']),
-            new TwigFunction('pilea_repo_git', [$this, 'getGitRepo']),
-            new TwigFunction('pilea_documentation', [$this, 'getDocumentation']),
-            new TwigFunction('pilea_help_graph', [$this, 'getGraphHelp']),
+            new TwigFunction('aeneria_version', [$this, 'getVersion']),
+            new TwigFunction('aeneria_repo_git', [$this, 'getGitRepo']),
+            new TwigFunction('aeneria_documentation', [$this, 'getDocumentation']),
+            new TwigFunction('aeneria_help_graph', [$this, 'getGraphHelp']),
         ];
     }
 
@@ -47,7 +47,7 @@ final class AppExtension extends AbstractExtension
 
     public function getDocumentation(?string $path = ''): string
     {
-        return \sprintf("%s%s%s", Constants::DOCUMENTATION, Constants::VERSION, $path);
+        return \sprintf("%s%s/%s", Constants::DOCUMENTATION, Constants::VERSION, $path);
     }
 
     public function getGraphHelp(?string $graph): string

@@ -11,7 +11,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use App\Constants;
 
 /***
- * Get current version of pilea.
+ * Get current version of aeneria.
  */
 class VersionCommand extends Command
 {
@@ -19,8 +19,8 @@ class VersionCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('pilea:version')
-            ->setDescription('Get Pilea version.');
+            ->setName('aeneria:version')
+            ->setDescription('Get aeneria version.');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)

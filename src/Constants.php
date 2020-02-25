@@ -14,7 +14,7 @@ class Constants {
      * Gitlab repo URL
      * @var \String
      */
-    public const REPO_GIT = 'https://gitlab.com/pilea/Pilea';
+    public const REPO_GIT = 'https://gitlab.com/aeneria/aeneria';
 
     /**
      * Documentation URL

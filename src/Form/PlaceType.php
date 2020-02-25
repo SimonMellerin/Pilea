@@ -39,7 +39,7 @@ class PlaceType extends AbstractType
             ])
             ->add('public', CheckboxType::class, [
                 'label' => 'Public',
-                'help' => 'Un compteur public est visible par tous les utilisateurs de Pilea.',
+                'help' => 'Un compteur public est visible par tous les utilisateurs de æneria.',
                 'required' => false
             ])
             ->add('shared', ChoiceType::class, [
